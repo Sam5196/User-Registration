@@ -36,9 +36,19 @@ public class UserDetails {
         }
     }
     public void mobile(String mobile) {
-        regex = "/^([+]\\d{2}[ ])?\\d{10}$/";
+        regex = "^[0-9]{2}(\s){1}[0-9]{10}$";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(mobile);
+        if (matcher.matches()) {
+            System.out.println("Input follows required regex");
+        } else {
+            System.out.println("Sorry!! Input doesn't follow required regex");
+        }
+    }
+    public void password(String password) {
+        regex = "^[a-zA-Z0-9]{8,}$";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(password);
         if (matcher.matches()) {
             System.out.println("Input follows required regex");
         } else {
