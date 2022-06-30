@@ -16,10 +16,14 @@ public class UserRegex {
         String lastName = scanner.next();
         userDetails.firstName(lastName);
     }
-
     public void userEmail() {
         System.out.println("Enter Your email : ");
         String email = scanner.next();
         userDetails.email(email);
+    }
+    public void userMobile() {
+        System.out.println("Enter Your mobile : ");
+        String mobile = scanner.next();
+        userDetails.mobile(mobile);
     }
 }
