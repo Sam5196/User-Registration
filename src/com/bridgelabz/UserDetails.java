@@ -46,7 +46,7 @@ public class UserDetails {
         }
     }
     public void password(String password) {
-        regex = "^[a-zA-Z0-9]{8,}$";
+        regex = "^(?=.*[A-Z]).{8,}$";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(password);
         if (matcher.matches()) {
@@ -55,4 +55,5 @@ public class UserDetails {
             System.out.println("Sorry!! Input doesn't follow required regex");
         }
     }
+
 }

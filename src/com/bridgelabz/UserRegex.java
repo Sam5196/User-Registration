@@ -3,10 +3,8 @@ package com.bridgelabz;
 import java.util.Scanner;
 
 public class UserRegex {
-
     Scanner scanner = new Scanner(System.in);
     UserDetails userDetails = new UserDetails();
-
     public void userFirstName() {
         System.out.println("Enter Your First Name : ");
         String firstName = scanner.next();
@@ -27,10 +25,10 @@ public class UserRegex {
         String mobile = scanner.next();
         userDetails.mobile(mobile);
     }
+
     public void userPassword() {
         System.out.println("Enter Your password : ");
         String password = scanner.next();
         userDetails.password(password);
     }
-
 }
