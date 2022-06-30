@@ -3,6 +3,7 @@ package com.bridgelabz;
 import java.util.Scanner;
 
 public class UserRegex {
+
     Scanner scanner = new Scanner(System.in);
     UserDetails userDetails = new UserDetails();
     public void userFirstName() {
@@ -14,5 +15,11 @@ public class UserRegex {
         System.out.println("Enter Your Last Name : ");
         String lastName = scanner.next();
         userDetails.firstName(lastName);
+    }
+
+    public void userEmail() {
+        System.out.println("Enter Your email : ");
+        String email = scanner.next();
+        userDetails.email(email);
     }
 }

@@ -25,4 +25,14 @@ public class UserDetails {
             System.out.println("Sorry!! Input doesn't follow required regex");
         }
     }
+    public void email(String email) {
+        regex = "^[a-z0-9]+([.][a-z0-9]+)*@bl[.]co[.][a-z]{2,3}$";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(email);
+        if (matcher.matches()) {
+            System.out.println("Input follows required regex");
+        } else {
+            System.out.println("Sorry!! Input doesn't follow required regex");
+        }
+    }
 }

@@ -7,7 +7,8 @@ public class Main {
     Scanner scanner = new Scanner(System.in);
     public void choice() {
         while (true) {
-            System.out.println("Enter 1 To Verify First Name\n" + "Enter 2 To Verify Last Name\n" + "Enter 0 To Exit");
+            System.out.println("Enter 1 To Verify First Name\n" + "Enter 2 To Verify Last Name\n"
+                    + "Enter 3 To Verify email\n" + "Enter 0 To Exit");
             int choice = scanner.nextInt();
             switch (choice) {
                 case 1:
@@ -15,6 +16,9 @@ public class Main {
                     break;
                 case 2:
                     userRegex.userLastName();
+                    break;
+                case 3:
+                    userRegex.userEmail();
                     break;
                 case 0:
                     System.exit(0);
