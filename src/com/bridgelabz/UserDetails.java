@@ -46,7 +46,7 @@ public class UserDetails {
         }
     }
     public void password(String password) {
-        regex = "^[a-zA-Z0-9]{8,}$";
+        regex = "^[a-zA-Z@$!%*#?&0-9]{8,}$";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(password);
         if (matcher.matches()) {
