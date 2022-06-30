@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Main {
     UserRegex userRegex = new UserRegex();
+    SampleEmail testSampleEmail = new SampleEmail();
     Scanner scanner = new Scanner(System.in);
     public void choice() {
         while (true) {
@@ -35,6 +36,11 @@ public class Main {
                     continue;
             }
         }
+    }
+
+    public void sampleEmailIds() {
+        testSampleEmail.testForValidEmails();
+        testSampleEmail.testForNonValidEmails();
     }
 
     public static void main(String[] args) {
