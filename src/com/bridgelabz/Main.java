@@ -1,22 +1,25 @@
 package com.bridgelabz;
 
 import java.util.Scanner;
+
 public class Main {
     UserRegex userRegex = new UserRegex();
     Scanner scanner = new Scanner(System.in);
     public void choice() {
         while (true) {
-            System.out.println("Enter 1 To Verify First Name\n"
-                    + "Enter 0 To Exit");
+            System.out.println("Enter 1 To Verify First Name\n" + "Enter 2 To Verify Last Name\n" + "Enter 0 To Exit");
             int choice = scanner.nextInt();
             switch (choice) {
-                case 1 :
+                case 1:
                     userRegex.userFirstName();
+                    break;
+                case 2:
+                    userRegex.userLastName();
                     break;
                 case 0:
                     System.exit(0);
                     break;
-                default :
+                default:
                     System.out.println("Wrong input \n Please enter Correct input");
                     continue;
             }

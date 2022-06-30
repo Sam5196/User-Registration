@@ -15,4 +15,14 @@ public class UserDetails {
             System.out.println("Sorry!! Input doesn't follow required regex");
         }
     }
+    public void lastName(String lastName) {
+        regex = "^[A-Z]{1}[a-z]{2,}$";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(lastName);
+        if (matcher.matches()) {
+            System.out.println("Input follows required regex");
+        } else {
+            System.out.println("Sorry!! Input doesn't follow required regex");
+        }
+    }
 }
