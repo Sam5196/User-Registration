@@ -1,0 +1,76 @@
+DELL@DESKTOP-5MU4B4A MINGW64 ~/Desktop/Day 4
+$ touch abc.txt def.txt
+
+DELL@DESKTOP-5MU4B4A MINGW64 ~/Desktop/Day 4
+$ ls
+abc.txt  def.txt
+
+DELL@DESKTOP-5MU4B4A MINGW64 ~/Desktop/Day 4
+$ nano copyfiles.sh
+
+DELL@DESKTOP-5MU4B4A MINGW64 ~/Desktop/Day 4
+$ cat copyfiles.sh
+for files in `ls *.txt`;
+do
+folderName=`echo $file | awk -F. '{print $1}'`;
+if [ -d $folderName ]
+then
+rm -R $folderName;
+fi
+mkdir $folderName;
+cp $file $folderName;
+done
+
+DELL@DESKTOP-5MU4B4A MINGW64 ~/Desktop/Day 4
+$ chmod +x copyfiles.sh #change the access mode of files.
+
+DELL@DESKTOP-5MU4B4A MINGW64 ~/Desktop/Day 4
+$ ./copyfiles.sh
+rm: missing operand
+Try 'rm --help' for more information.
+mkdir: missing operand
+Try 'mkdir --help' for more information.
+cp: missing file operand
+Try 'cp --help' for more information.
+rm: missing operand
+Try 'rm --help' for more information.
+mkdir: missing operand
+Try 'mkdir --help' for more information.
+cp: missing file operand
+Try 'cp --help' for more information.
+
+DELL@DESKTOP-5MU4B4A MINGW64 ~/Desktop/Day 4
+$ bash -x copyfiles.sh
+++ ls abc.txt def.txt
++ for files in `ls *.txt`
+++ echo
+++ awk -F. '{print $1}'
++ folderName=
++ '[' -d ']'
++ rm -R
+rm: missing operand
+Try 'rm --help' for more information.
++ mkdir
+mkdir: missing operand
+Try 'mkdir --help' for more information.
++ cp
+cp: missing file operand
+Try 'cp --help' for more information.
++ for files in `ls *.txt`
+++ echo
+++ awk -F. '{print $1}'
++ folderName=
++ '[' -d ']'
++ rm -R
+rm: missing operand
+Try 'rm --help' for more information.
++ mkdir
+mkdir: missing operand
+Try 'mkdir --help' for more information.
++ cp
+cp: missing file operand
+Try 'cp --help' for more information.
+
+DELL@DESKTOP-5MU4B4A MINGW64 ~/Desktop/Day 4
+$ ls
+abc.txt  copyfiles.sh  def.txt

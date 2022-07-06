@@ -1,0 +1,53 @@
+DELL@DESKTOP-5MU4B4A MINGW64 ~/temp
+$ pwd
+/c/Users/DELL/temp
+
+DELL@DESKTOP-5MU4B4A MINGW64 ~/temp
+$ touch abc.txt def.txt
+
+DELL@DESKTOP-5MU4B4A MINGW64 ~/temp
+$ ls
+abc.txt  def.txt
+
+DELL@DESKTOP-5MU4B4A MINGW64 ~/temp
+$ ls -p #this command use for list information about files and directories.
+abc.txt  def.txt
+
+DELL@DESKTOP-5MU4B4A MINGW64 ~/temp
+$ ls *.txt #gathers a list of file names.
+abc.txt  def.txt
+
+DELL@DESKTOP-5MU4B4A MINGW64 ~/temp
+$ for file in *.txt
+> do
+> echo $file;
+> done
+abc.txt
+def.txt
+
+DELL@DESKTOP-5MU4B4A MINGW64 ~/temp
+$ for file in *.txt
+> do
+> folderName= echo $file | awk -F. '{print $1}';
+> echo $folderName;
+> done
+abc
+
+def
+
+
+DELL@DESKTOP-5MU4B4A MINGW64 ~/temp
+$ for file in *.txt
+> do
+> folderName= echo $file | awk -F. '{print $1}';
+> mkdir $folderName;
+> done
+abc
+mkdir: missing operand
+Try 'mkdir --help' for more information.
+def
+mkdir: missing operand
+Try 'mkdir --help' for more information.
+
+DELL@DESKTOP-5MU4B4A MINGW64 ~/temp
+$

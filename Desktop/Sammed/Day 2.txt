@@ -1,0 +1,159 @@
+DELL@DESKTOP-5MU4B4A MINGW64 ~/temp
+$ pwd
+/c/Users/DELL/temp
+
+DELL@DESKTOP-5MU4B4A MINGW64 ~/temp
+$ touch a.txt b.txt c.txt
+
+DELL@DESKTOP-5MU4B4A MINGW64 ~/temp
+$ ls
+a.txt  b.txt  c.txt
+
+DELL@DESKTOP-5MU4B4A MINGW64 ~/temp
+$ rm -r a.txt b.txt c.txt #this command use for remove the file & directory.
+
+DELL@DESKTOP-5MU4B4A MINGW64 ~/temp
+$ ls
+
+DELL@DESKTOP-5MU4B4A MINGW64 ~/temp
+$ nano Hello.java #It is a text editor for linux & unix.
+
+DELL@DESKTOP-5MU4B4A MINGW64 ~/temp
+$ cat Hello.java #this command use for print the content of a file onto the output stream.
+public class Hello {
+public static void main(String args[]){
+while (true){
+System.out.println("Hello World");
+try{
+Thread.sleep(60000);
+}catch (Exception ex){}
+}
+}
+}
+
+DELL@DESKTOP-5MU4B4A MINGW64 ~/temp
+$ java Hello.java # reads source files that contain module, package and type declarations written in the Java programming language, and compiles them into class files.
+Hello World
+
+DELL@DESKTOP-5MU4B4A MINGW64 ~/temp
+$ java Hello.java & 
+[1] 707
+
+DELL@DESKTOP-5MU4B4A MINGW64 ~/temp
+$ Hello World 
+^C
+
+DELL@DESKTOP-5MU4B4A MINGW64 ~/temp
+$ jobs #its shows the running jobs.
+[1]+  Running                 java Hello.java &
+
+DELL@DESKTOP-5MU4B4A MINGW64 ~/temp
+$ fg %1 #fg means foreground command.its moves a background process on your to the foreground.
+java Hello.java
+2022-05-02 10:33:09
+Full thread dump Java HotSpot(TM) 64-Bit Server VM (18.0.1+10-24 mixed mode, sharing):
+
+Threads class SMR info:
+_java_thread_list=0x000002305ce474e0, length=12, elements={
+0x000002303860f8d0, 0x0000023058549d50, 0x000002305854a600, 0x0000023058562b70,
+0x0000023058563420, 0x0000023058565ce0, 0x00000230585685a0, 0x0000023058569180,
+0x00000230585befa0, 0x00000230585dfad0, 0x000002305c861930, 0x000002305c8be250
+}
+
+"main" #1 prio=5 os_prio=0 cpu=500.00ms elapsed=42.67s tid=0x000002303860f8d0 nid=19156 waiting on condition  [0x0000008314cfe000]
+   java.lang.Thread.State: TIMED_WAITING (sleeping)
+        at java.lang.Thread.sleep(java.base@18.0.1/Native Method)
+        at Hello.main(Hello.java:6)
+        at java.lang.invoke.LambdaForm$DMH/0x0000000800c30c00.invokeStatic(java.base@18.0.1/LambdaForm$DMH)
+        at java.lang.invoke.LambdaForm$MH/0x0000000800d2d400.invoke(java.base@18.0.1/LambdaForm$MH)
+        at java.lang.invoke.Invokers$Holder.invokeExact_MT(java.base@18.0.1/Invokers$Holder)
+        at jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(java.base@18.0.1/DirectMethodHandleAccessor.java:155)
+        at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(java.base@18.0.1/DirectMethodHandleAccessor.java:104)
+        at java.lang.reflect.Method.invoke(java.base@18.0.1/Method.java:577)
+        at com.sun.tools.javac.launcher.Main.execute(jdk.compiler@18.0.1/Main.java:421)
+        at com.sun.tools.javac.launcher.Main.run(jdk.compiler@18.0.1/Main.java:192)
+        at com.sun.tools.javac.launcher.Main.main(jdk.compiler@18.0.1/Main.java:132)
+
+"Reference Handler" #2 daemon prio=10 os_prio=2 cpu=0.00ms elapsed=42.65s tid=0x0000023058549d50 nid=12256 waiting on condition  [0x00000083154ff000]
+   java.lang.Thread.State: RUNNABLE
+        at java.lang.ref.Reference.waitForReferencePendingList(java.base@18.0.1/Native Method)
+        at java.lang.ref.Reference.processPendingReferences(java.base@18.0.1/Reference.java:253)
+        at java.lang.ref.Reference$ReferenceHandler.run(java.base@18.0.1/Reference.java:215)
+
+"Finalizer" #3 daemon prio=8 os_prio=1 cpu=0.00ms elapsed=42.65s tid=0x000002305854a600 nid=10288 in Object.wait()  [0x00000083155ff000]
+   java.lang.Thread.State: WAITING (on object monitor)
+        at java.lang.Object.wait(java.base@18.0.1/Native Method)
+        - waiting on <0x000000008bf0b950> (a java.lang.ref.ReferenceQueue$Lock)
+        at java.lang.ref.ReferenceQueue.remove(java.base@18.0.1/ReferenceQueue.java:155)
+        - locked <0x000000008bf0b950> (a java.lang.ref.ReferenceQueue$Lock)
+        at java.lang.ref.ReferenceQueue.remove(java.base@18.0.1/ReferenceQueue.java:176)
+        at java.lang.ref.Finalizer$FinalizerThread.run(java.base@18.0.1/Finalizer.java:183)
+
+"Signal Dispatcher" #4 daemon prio=9 os_prio=2 cpu=0.00ms elapsed=42.64s tid=0x0000023058562b70 nid=20592 waiting on condition  [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"Attach Listener" #5 daemon prio=5 os_prio=2 cpu=0.00ms elapsed=42.64s tid=0x0000023058563420 nid=16288 runnable  [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"Service Thread" #6 daemon prio=9 os_prio=0 cpu=0.00ms elapsed=42.64s tid=0x0000023058565ce0 nid=13484 runnable  [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"Monitor Deflation Thread" #7 daemon prio=9 os_prio=0 cpu=0.00ms elapsed=42.64s tid=0x00000230585685a0 nid=15776 runnable  [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"C2 CompilerThread0" #8 daemon prio=9 os_prio=2 cpu=218.75ms elapsed=42.64s tid=0x0000023058569180 nid=13524 waiting on condition  [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+   No compile task
+
+"C1 CompilerThread0" #11 daemon prio=9 os_prio=2 cpu=265.62ms elapsed=42.63s tid=0x00000230585befa0 nid=14408 waiting on condition  [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+   No compile task
+
+"Sweeper thread" #12 daemon prio=9 os_prio=2 cpu=0.00ms elapsed=42.63s tid=0x00000230585dfad0 nid=8564 runnable  [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"Common-Cleaner" #13 daemon prio=8 os_prio=1 cpu=0.00ms elapsed=42.61s tid=0x000002305c861930 nid=5772 in Object.wait()  [0x0000008315dff000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+        at java.lang.Object.wait(java.base@18.0.1/Native Method)
+        - waiting on <0x000000008be01ee8> (a java.lang.ref.ReferenceQueue$Lock)
+        at java.lang.ref.ReferenceQueue.remove(java.base@18.0.1/ReferenceQueue.java:155)
+        - locked <0x000000008be01ee8> (a java.lang.ref.ReferenceQueue$Lock)
+        at jdk.internal.ref.CleanerImpl.run(java.base@18.0.1/CleanerImpl.java:140)
+        at java.lang.Thread.run(java.base@18.0.1/Thread.java:833)
+        at jdk.internal.misc.InnocuousThread.run(java.base@18.0.1/InnocuousThread.java:162)
+
+"Notification Thread" #14 daemon prio=9 os_prio=0 cpu=0.00ms elapsed=42.60s tid=0x000002305c8be250 nid=19292 runnable  [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"VM Thread" os_prio=2 cpu=15.62ms elapsed=42.65s tid=0x0000023058546800 nid=8380 runnable
+
+"GC Thread#0" os_prio=2 cpu=0.00ms elapsed=42.67s tid=0x000002303866f6d0 nid=13848 runnable
+
+"G1 Main Marker" os_prio=2 cpu=0.00ms elapsed=42.67s tid=0x0000023038680ca0 nid=11596 runnable
+
+"G1 Conc#0" os_prio=2 cpu=0.00ms elapsed=42.67s tid=0x00000230386825b0 nid=15240 runnable
+
+"G1 Refine#0" os_prio=2 cpu=0.00ms elapsed=42.66s tid=0x00000230386d0820 nid=20372 runnable
+
+"G1 Service" os_prio=2 cpu=0.00ms elapsed=42.66s tid=0x00000230386d1040 nid=5524 runnable
+
+"VM Periodic Task Thread" os_prio=2 cpu=0.00ms elapsed=42.59s tid=0x000002305c8cf700 nid=12520 waiting on condition
+
+JNI global refs: 8, weak refs: 0
+
+Heap
+ garbage-first heap   total 126976K, used 14817K [0x0000000084400000, 0x0000000100000000)
+  region size 1024K, 15 young (15360K), 0 survivors (0K)
+ Metaspace       used 9012K, committed 9216K, reserved 1114112K
+  class space    used 1047K, committed 1152K, reserved 1048576K
+
+
+DELL@DESKTOP-5MU4B4A MINGW64 ~/temp
+$ bg %1 #bg means background process.
+bash: bg: %1: no such job
+
+DELL@DESKTOP-5MU4B4A MINGW64 ~/temp
+$ jobs
+
+DELL@DESKTOP-5MU4B4A MINGW64 ~/temp
+$ Hello World

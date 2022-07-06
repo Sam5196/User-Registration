@@ -1,0 +1,197 @@
+
+DELL@DESKTOP-5MU4B4A MINGW64 ~
+$ pwd #pwd means print working directory it means current working directory
+/c/Users/DELL
+
+DELL@DESKTOP-5MU4B4A MINGW64 ~
+$ ls #this command use for list files and directories from the command line interface.
+'3D Objects'/         Favorites/               NTUSER.DAT                                                                                     NetHood@       'Start Menu'@   c.txt                sammed/
+ AppData/             IntelGraphicsProfiles/   NTUSER.DAT{b97de9c7-576a-11eb-b447-646c801c4357}.TxR.0.regtrans-ms                             OneDrive/       Templates@     eclipse/             sammed.txt
+'Application Data'@   Links/                   NTUSER.DAT{b97de9c7-576a-11eb-b447-646c801c4357}.TxR.1.regtrans-ms                             Pictures/       Videos/        eclipse-workspace/
+ Contacts/           'Local Settings'@         NTUSER.DAT{b97de9c7-576a-11eb-b447-646c801c4357}.TxR.2.regtrans-ms                             PrintHood@      a.txt          food1.txt
+ Cookies@             Music/                   NTUSER.DAT{b97de9c7-576a-11eb-b447-646c801c4357}.TxR.blf                                       Recent@         ansel/         mixed.txt
+ Desktop/            'My Documents'@           NTUSER.DAT{b97de9c8-576a-11eb-b447-646c801c4357}.TM.blf                                       'Saved Games'/   b.text         ntuser.dat.LOG1
+ Documents/           NPProt.bkp*              NTUSER.DAT{b97de9c8-576a-11eb-b447-646c801c4357}.TMContainer00000000000000000001.regtrans-ms   Searches/       b.txt          ntuser.dat.LOG2
+ Downloads/           NPProt.exe*              NTUSER.DAT{b97de9c8-576a-11eb-b447-646c801c4357}.TMContainer00000000000000000002.regtrans-ms   SendTo@         c.text         ntuser.ini
+
+DELL@DESKTOP-5MU4B4A MINGW64 ~
+$ ls -l #this command use for list files in long format.
+total 20531
+drwxr-xr-x 1 DELL 197609        0 Mar  3  2021 '3D Objects'/
+drwxr-xr-x 1 DELL 197609        0 Mar  3  2021  AppData/
+lrwxrwxrwx 1 DELL 197609       29 Mar  3  2021 'Application Data' -> /c/Users/DELL/AppData/Roaming/
+drwxr-xr-x 1 DELL 197609        0 Mar  3  2021  Contacts/
+lrwxrwxrwx 1 DELL 197609       57 Mar  3  2021  Cookies -> /c/Users/DELL/AppData/Local/Microsoft/Windows/INetCookies/
+drwxr-xr-x 1 DELL 197609        0 May  2 08:26  Desktop/
+drwxr-xr-x 1 DELL 197609        0 Feb 15 18:50  Documents/
+drwxr-xr-x 1 DELL 197609        0 May  2 08:11  Downloads/
+drwxr-xr-x 1 DELL 197609        0 Mar  3  2021  Favorites/
+drwxr-xr-x 1 DELL 197609        0 May  2 07:46  IntelGraphicsProfiles/
+drwxr-xr-x 1 DELL 197609        0 Mar  3  2021  Links/
+lrwxrwxrwx 1 DELL 197609       27 Mar  3  2021 'Local Settings' -> /c/Users/DELL/AppData/Local/
+drwxr-xr-x 1 DELL 197609        0 Mar  3  2021  Music/
+lrwxrwxrwx 1 DELL 197609       23 Mar  3  2021 'My Documents' -> /c/Users/DELL/Documents/
+-r-xr-xr-x 1 DELL 197609    49152 Sep 20  2011  NPProt.bkp*
+-rwxr-xr-x 1 DELL 197609    49152 Sep 20  2011  NPProt.exe*
+-rw-r--r-- 1 DELL 197609 11010048 Apr 21 12:36  NTUSER.DAT
+-rw-r--r-- 1 DELL 197609  1048576 Apr 25 09:27  NTUSER.DAT{b97de9c7-576a-11eb-b447-646c801c4357}.TxR.0.regtrans-ms
+-rw-r--r-- 1 DELL 197609  1048576 Apr 23 14:19  NTUSER.DAT{b97de9c7-576a-11eb-b447-646c801c4357}.TxR.1.regtrans-ms
+-rw-r--r-- 1 DELL 197609  1048576 Apr 23 14:19  NTUSER.DAT{b97de9c7-576a-11eb-b447-646c801c4357}.TxR.2.regtrans-ms
+-rw-r--r-- 1 DELL 197609    65536 Apr 25 09:27  NTUSER.DAT{b97de9c7-576a-11eb-b447-646c801c4357}.TxR.blf
+-rw-r--r-- 1 DELL 197609    65536 Mar  3  2021  NTUSER.DAT{b97de9c8-576a-11eb-b447-646c801c4357}.TM.blf
+-rw-r--r-- 1 DELL 197609   524288 Mar  3  2021  NTUSER.DAT{b97de9c8-576a-11eb-b447-646c801c4357}.TMContainer00000000000000000001.regtrans-ms
+-rw-r--r-- 1 DELL 197609   524288 Mar  3  2021  NTUSER.DAT{b97de9c8-576a-11eb-b447-646c801c4357}.TMContainer00000000000000000002.regtrans-ms
+lrwxrwxrwx 1 DELL 197609       65 Mar  3  2021  NetHood -> '/c/Users/DELL/AppData/Roaming/Microsoft/Windows/Network Shortcuts'/
+drwxr-xr-x 1 DELL 197609        0 May  2 07:47  OneDrive/
+drwxr-xr-x 1 DELL 197609        0 Jan 25 13:27  Pictures/
+lrwxrwxrwx 1 DELL 197609       65 Mar  3  2021  PrintHood -> '/c/Users/DELL/AppData/Roaming/Microsoft/Windows/Printer Shortcuts'/
+lrwxrwxrwx 1 DELL 197609       54 Mar  3  2021  Recent -> /c/Users/DELL/AppData/Roaming/Microsoft/Windows/Recent/
+drwxr-xr-x 1 DELL 197609        0 Mar  3  2021 'Saved Games'/
+drwxr-xr-x 1 DELL 197609        0 Mar  3  2021  Searches/
+lrwxrwxrwx 1 DELL 197609       54 Mar  3  2021  SendTo -> /c/Users/DELL/AppData/Roaming/Microsoft/Windows/SendTo/
+lrwxrwxrwx 1 DELL 197609       58 Mar  3  2021 'Start Menu' -> '/c/Users/DELL/AppData/Roaming/Microsoft/Windows/Start Menu'/
+lrwxrwxrwx 1 DELL 197609       57 Mar  3  2021  Templates -> /c/Users/DELL/AppData/Roaming/Microsoft/Windows/Templates/
+drwxr-xr-x 1 DELL 197609        0 Aug 26  2021  Videos/
+-rw-r--r-- 1 DELL 197609        0 Apr 26 13:32  a.txt
+drwxr-xr-x 1 DELL 197609        0 Mar 22  2021  ansel/
+-rw-r--r-- 1 DELL 197609        0 Apr 28 12:47  b.text
+-rw-r--r-- 1 DELL 197609        0 Apr 26 13:32  b.txt
+-rw-r--r-- 1 DELL 197609        0 Apr 26 13:31  c.text
+-rw-r--r-- 1 DELL 197609        0 Apr 26 13:32  c.txt
+drwxr-xr-x 1 DELL 197609        0 Jan 25 10:27  eclipse/
+drwxr-xr-x 1 DELL 197609        0 Jan 28 12:39  eclipse-workspace/
+-rw-r--r-- 1 DELL 197609       53 Apr 28 13:12  food1.txt
+-rw-r--r-- 1 DELL 197609       33 Apr 28 13:15  mixed.txt
+-rw-r--r-- 1 DELL 197609  3387392 Mar  3  2021  ntuser.dat.LOG1
+-rw-r--r-- 1 DELL 197609  2097152 Mar  3  2021  ntuser.dat.LOG2
+-rw-r--r-- 1 DELL 197609       20 Mar  3  2021  ntuser.ini
+drwxr-xr-x 1 DELL 197609        0 Apr 28 12:53  sammed/
+-rw-r--r-- 1 DELL 197609        0 Apr 29 19:10  sammed.txt
+
+DELL@DESKTOP-5MU4B4A MINGW64 ~
+$ ls -a #this command use for all see hidden files
+ ./                             AppData/                 NPProt.bkp*                                                                                    PrintHood@      c.txt
+ ../                           'Application Data'@       NPProt.exe*                                                                                    Recent@         eclipse/
+ .android/                      Contacts/                NTUSER.DAT                                                                                    'Saved Games'/   eclipse-workspace/
+ .bash_history                  Cookies@                 NTUSER.DAT{b97de9c7-576a-11eb-b447-646c801c4357}.TxR.0.regtrans-ms                             Searches/       food1.txt
+ .cache/                        Desktop/                 NTUSER.DAT{b97de9c7-576a-11eb-b447-646c801c4357}.TxR.1.regtrans-ms                             SendTo@         mixed.txt
+ .eclipse/                      Documents/               NTUSER.DAT{b97de9c7-576a-11eb-b447-646c801c4357}.TxR.2.regtrans-ms                            'Start Menu'@    ntuser.dat.LOG1
+ .emulator_console_auth_token   Downloads/               NTUSER.DAT{b97de9c7-576a-11eb-b447-646c801c4357}.TxR.blf                                       Templates@      ntuser.dat.LOG2
+ .gradle/                       Favorites/               NTUSER.DAT{b97de9c8-576a-11eb-b447-646c801c4357}.TM.blf                                        Videos/         ntuser.ini
+ .idlerc/                       IntelGraphicsProfiles/   NTUSER.DAT{b97de9c8-576a-11eb-b447-646c801c4357}.TMContainer00000000000000000001.regtrans-ms   a.txt           sammed/
+ .p2/                           Links/                   NTUSER.DAT{b97de9c8-576a-11eb-b447-646c801c4357}.TMContainer00000000000000000002.regtrans-ms   ansel/          sammed.txt
+ .viminfo                      'Local Settings'@         NetHood@                                                                                       b.text
+ .vscode/                       Music/                   OneDrive/                                                                                      b.txt
+'3D Objects'/                  'My Documents'@           Pictures/                                                                                      c.text
+
+DELL@DESKTOP-5MU4B4A MINGW64 ~
+$ ls -al #this command use for all files including hidden files
+total 20576
+drwxr-xr-x 1 DELL 197609        0 May  2 08:25  ./
+drwxr-xr-x 1 DELL 197609        0 Mar  3  2021  ../
+drwxr-xr-x 1 DELL 197609        0 Aug 17  2021  .android/
+-rw-r--r-- 1 DELL 197609     4562 May  1 11:55  .bash_history
+drwxr-xr-x 1 DELL 197609        0 Jan 25 10:34  .cache/
+drwxr-xr-x 1 DELL 197609        0 Jan 25 10:34  .eclipse/
+-rw-r--r-- 1 DELL 197609       16 May 29  2021  .emulator_console_auth_token
+drwxr-xr-x 1 DELL 197609        0 May 29  2021  .gradle/
+drwxr-xr-x 1 DELL 197609        0 Mar  4  2021  .idlerc/
+drwxr-xr-x 1 DELL 197609        0 Apr 28 11:54  .p2/
+-rw-r--r-- 1 DELL 197609     1228 Apr 28 12:53  .viminfo
+drwxr-xr-x 1 DELL 197609        0 Sep 12  2021  .vscode/
+drwxr-xr-x 1 DELL 197609        0 Mar  3  2021 '3D Objects'/
+drwxr-xr-x 1 DELL 197609        0 Mar  3  2021  AppData/
+lrwxrwxrwx 1 DELL 197609       29 Mar  3  2021 'Application Data' -> /c/Users/DELL/AppData/Roaming/
+drwxr-xr-x 1 DELL 197609        0 Mar  3  2021  Contacts/
+lrwxrwxrwx 1 DELL 197609       57 Mar  3  2021  Cookies -> /c/Users/DELL/AppData/Local/Microsoft/Windows/INetCookies/
+drwxr-xr-x 1 DELL 197609        0 May  2 08:26  Desktop/
+drwxr-xr-x 1 DELL 197609        0 Feb 15 18:50  Documents/
+drwxr-xr-x 1 DELL 197609        0 May  2 08:11  Downloads/
+drwxr-xr-x 1 DELL 197609        0 Mar  3  2021  Favorites/
+drwxr-xr-x 1 DELL 197609        0 May  2 07:46  IntelGraphicsProfiles/
+drwxr-xr-x 1 DELL 197609        0 Mar  3  2021  Links/
+lrwxrwxrwx 1 DELL 197609       27 Mar  3  2021 'Local Settings' -> /c/Users/DELL/AppData/Local/
+drwxr-xr-x 1 DELL 197609        0 Mar  3  2021  Music/
+lrwxrwxrwx 1 DELL 197609       23 Mar  3  2021 'My Documents' -> /c/Users/DELL/Documents/
+-r-xr-xr-x 1 DELL 197609    49152 Sep 20  2011  NPProt.bkp*
+-rwxr-xr-x 1 DELL 197609    49152 Sep 20  2011  NPProt.exe*
+-rw-r--r-- 1 DELL 197609 11010048 Apr 21 12:36  NTUSER.DAT
+-rw-r--r-- 1 DELL 197609  1048576 Apr 25 09:27  NTUSER.DAT{b97de9c7-576a-11eb-b447-646c801c4357}.TxR.0.regtrans-ms
+-rw-r--r-- 1 DELL 197609  1048576 Apr 23 14:19  NTUSER.DAT{b97de9c7-576a-11eb-b447-646c801c4357}.TxR.1.regtrans-ms
+-rw-r--r-- 1 DELL 197609  1048576 Apr 23 14:19  NTUSER.DAT{b97de9c7-576a-11eb-b447-646c801c4357}.TxR.2.regtrans-ms
+-rw-r--r-- 1 DELL 197609    65536 Apr 25 09:27  NTUSER.DAT{b97de9c7-576a-11eb-b447-646c801c4357}.TxR.blf
+-rw-r--r-- 1 DELL 197609    65536 Mar  3  2021  NTUSER.DAT{b97de9c8-576a-11eb-b447-646c801c4357}.TM.blf
+-rw-r--r-- 1 DELL 197609   524288 Mar  3  2021  NTUSER.DAT{b97de9c8-576a-11eb-b447-646c801c4357}.TMContainer00000000000000000001.regtrans-ms
+-rw-r--r-- 1 DELL 197609   524288 Mar  3  2021  NTUSER.DAT{b97de9c8-576a-11eb-b447-646c801c4357}.TMContainer00000000000000000002.regtrans-ms
+lrwxrwxrwx 1 DELL 197609       65 Mar  3  2021  NetHood -> '/c/Users/DELL/AppData/Roaming/Microsoft/Windows/Network Shortcuts'/
+drwxr-xr-x 1 DELL 197609        0 May  2 07:47  OneDrive/
+drwxr-xr-x 1 DELL 197609        0 Jan 25 13:27  Pictures/
+lrwxrwxrwx 1 DELL 197609       65 Mar  3  2021  PrintHood -> '/c/Users/DELL/AppData/Roaming/Microsoft/Windows/Printer Shortcuts'/
+lrwxrwxrwx 1 DELL 197609       54 Mar  3  2021  Recent -> /c/Users/DELL/AppData/Roaming/Microsoft/Windows/Recent/
+drwxr-xr-x 1 DELL 197609        0 Mar  3  2021 'Saved Games'/
+drwxr-xr-x 1 DELL 197609        0 Mar  3  2021  Searches/
+lrwxrwxrwx 1 DELL 197609       54 Mar  3  2021  SendTo -> /c/Users/DELL/AppData/Roaming/Microsoft/Windows/SendTo/
+lrwxrwxrwx 1 DELL 197609       58 Mar  3  2021 'Start Menu' -> '/c/Users/DELL/AppData/Roaming/Microsoft/Windows/Start Menu'/
+lrwxrwxrwx 1 DELL 197609       57 Mar  3  2021  Templates -> /c/Users/DELL/AppData/Roaming/Microsoft/Windows/Templates/
+drwxr-xr-x 1 DELL 197609        0 Aug 26  2021  Videos/
+-rw-r--r-- 1 DELL 197609        0 Apr 26 13:32  a.txt
+drwxr-xr-x 1 DELL 197609        0 Mar 22  2021  ansel/
+-rw-r--r-- 1 DELL 197609        0 Apr 28 12:47  b.text
+-rw-r--r-- 1 DELL 197609        0 Apr 26 13:32  b.txt
+-rw-r--r-- 1 DELL 197609        0 Apr 26 13:31  c.text
+-rw-r--r-- 1 DELL 197609        0 Apr 26 13:32  c.txt
+drwxr-xr-x 1 DELL 197609        0 Jan 25 10:27  eclipse/
+drwxr-xr-x 1 DELL 197609        0 Jan 28 12:39  eclipse-workspace/
+-rw-r--r-- 1 DELL 197609       53 Apr 28 13:12  food1.txt
+-rw-r--r-- 1 DELL 197609       33 Apr 28 13:15  mixed.txt
+-rw-r--r-- 1 DELL 197609  3387392 Mar  3  2021  ntuser.dat.LOG1
+-rw-r--r-- 1 DELL 197609  2097152 Mar  3  2021  ntuser.dat.LOG2
+-rw-r--r-- 1 DELL 197609       20 Mar  3  2021  ntuser.ini
+drwxr-xr-x 1 DELL 197609        0 Apr 28 12:53  sammed/
+-rw-r--r-- 1 DELL 197609        0 Apr 29 19:10  sammed.txt
+
+DELL@DESKTOP-5MU4B4A MINGW64 ~
+$ ls ~ #this command is its goto home directory.
+'3D Objects'/         Favorites/               NTUSER.DAT                                                                                     NetHood@       'Start Menu'@   c.txt                sammed/
+ AppData/             IntelGraphicsProfiles/   NTUSER.DAT{b97de9c7-576a-11eb-b447-646c801c4357}.TxR.0.regtrans-ms                             OneDrive/       Templates@     eclipse/             sammed.txt
+'Application Data'@   Links/                   NTUSER.DAT{b97de9c7-576a-11eb-b447-646c801c4357}.TxR.1.regtrans-ms                             Pictures/       Videos/        eclipse-workspace/
+ Contacts/           'Local Settings'@         NTUSER.DAT{b97de9c7-576a-11eb-b447-646c801c4357}.TxR.2.regtrans-ms                             PrintHood@      a.txt          food1.txt
+ Cookies@             Music/                   NTUSER.DAT{b97de9c7-576a-11eb-b447-646c801c4357}.TxR.blf                                       Recent@         ansel/         mixed.txt
+ Desktop/            'My Documents'@           NTUSER.DAT{b97de9c8-576a-11eb-b447-646c801c4357}.TM.blf                                       'Saved Games'/   b.text         ntuser.dat.LOG1
+ Documents/           NPProt.bkp*              NTUSER.DAT{b97de9c8-576a-11eb-b447-646c801c4357}.TMContainer00000000000000000001.regtrans-ms   Searches/       b.txt          ntuser.dat.LOG2
+ Downloads/           NPProt.exe*              NTUSER.DAT{b97de9c8-576a-11eb-b447-646c801c4357}.TMContainer00000000000000000002.regtrans-ms   SendTo@         c.text         ntuser.ini
+
+DELL@DESKTOP-5MU4B4A MINGW64 ~
+$ ls .. #it is a parent directory.
+'All Users'@   DELL/   Default/  'Default User'@   Public/   desktop.ini
+
+DELL@DESKTOP-5MU4B4A MINGW64 ~
+$ mkdir temp #it means make directory its creating a directory.
+
+DELL@DESKTOP-5MU4B4A MINGW64 ~
+$ ls
+'3D Objects'/         Favorites/               NTUSER.DAT                                                                                     NetHood@       'Start Menu'@   c.txt                sammed/
+ AppData/             IntelGraphicsProfiles/   NTUSER.DAT{b97de9c7-576a-11eb-b447-646c801c4357}.TxR.0.regtrans-ms                             OneDrive/       Templates@     eclipse/             sammed.txt
+'Application Data'@   Links/                   NTUSER.DAT{b97de9c7-576a-11eb-b447-646c801c4357}.TxR.1.regtrans-ms                             Pictures/       Videos/        eclipse-workspace/   temp/
+ Contacts/           'Local Settings'@         NTUSER.DAT{b97de9c7-576a-11eb-b447-646c801c4357}.TxR.2.regtrans-ms                             PrintHood@      a.txt          food1.txt
+ Cookies@             Music/                   NTUSER.DAT{b97de9c7-576a-11eb-b447-646c801c4357}.TxR.blf                                       Recent@         ansel/         mixed.txt
+ Desktop/            'My Documents'@           NTUSER.DAT{b97de9c8-576a-11eb-b447-646c801c4357}.TM.blf                                       'Saved Games'/   b.text         ntuser.dat.LOG1
+ Documents/           NPProt.bkp*              NTUSER.DAT{b97de9c8-576a-11eb-b447-646c801c4357}.TMContainer00000000000000000001.regtrans-ms   Searches/       b.txt          ntuser.dat.LOG2
+ Downloads/           NPProt.exe*              NTUSER.DAT{b97de9c8-576a-11eb-b447-646c801c4357}.TMContainer00000000000000000002.regtrans-ms   SendTo@         c.text         ntuser.ini
+
+DELL@DESKTOP-5MU4B4A MINGW64 ~
+$ cd temp #cd command means change the directory.
+
+DELL@DESKTOP-5MU4B4A MINGW64 ~/temp
+$ pwd
+/c/Users/DELL/temp
+
+DELL@DESKTOP-5MU4B4A MINGW64 ~/temp
+$ touch a.txt b.txt c.txt #this command is used for creating empty files.
+
+DELL@DESKTOP-5MU4B4A MINGW64 ~/temp
+$ ls
+a.txt  b.txt  c.txt
+
+DELL@DESKTOP-5MU4B4A MINGW64 ~/temp
+$
